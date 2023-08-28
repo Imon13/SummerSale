@@ -88,7 +88,24 @@ function handleClick6(target){
    document.getElementById('total').innerText = total
 
 }
- 
-  
 
+ function aplly(){
+   const inputValue = document.getElementById('coupon')
+   const inputFeild = inputValue.value
+   if(inputFeild === 'imon')
+   { 
+        const discountPriceString = document.getElementById('dis')
+        const discountPrice = parseFloat(discountPriceString) 
+        const discount = (total*.20)
+       document.getElementById('dis').innerText=discount
+       
+       const totalPrice = total-discount
+       document.getElementById('grand').innerText = totalPrice
 
+   }
+ }
+function handleClickPursce(){
+   if(total>0){
+      document.getElementById('Purchase').removeAttribute = 'disabled'
+   }
+}
