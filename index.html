@@ -30,7 +30,7 @@
         <div class="flex"> 
           
             <div class="mt-20">
-              <div  class="  grid grid-cols-3 mx-52 justify-center">
+              <div  class="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-52 justify-center">
         
                 <!-- num1 -->
                 <div onclick="handleClick1(this)" class=" shadow-lg card w-[302] h-[200] items-center text-center mx-auto ">
@@ -104,10 +104,10 @@
        
              
               
-                <div   class=" grid grid-cols-3 mx-52 mt-20">
+                <div   class=" justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-52 mt-20 items-center">
                 
                         <!-- num1 -->
-                        <div onclick="handleClick4(this)" class="card w-[302] h-[200] items-center text-center mx-auto ">
+                        <div onclick="handleClick4(this)" class="card w-[302] h-[200] items-center text-center mx-auto  ">
                           <img class= "  w-1/2 mt-16" src="images/prod4.png" alt="">
                           <div class=" shadow-lg card-body items-center text-center mb-11 ">
                             <div class="grid grid-cols-5">
@@ -130,7 +130,7 @@
                           </div>
                         </div>
                         <!-- num2 -->
-                        <div onclick="handleClick5(this)" class=" shadow-lg card w-[302] h-[200] text-center items-center ">
+                        <div onclick="handleClick5(this)" class=" shadow-lg card w-[302] h-[200] text-center items-center justify-center ">
                           <img class=" w-1/2" src="images/prod5.png" alt="">
                           <div class="card-body items-center text-center"> 
                             <div class="grid grid-cols-5">
@@ -195,7 +195,7 @@
                     <p>Grand Price: <span id="grand">00</span>tk</p>
                     </div> 
                     <div class="mt-5">
-                      <button disabled id="Purchase"  class="bg-[#E527B2] text-white w-40 rounded-lg">Make Purchase</button>
+                      <button  onclick="handleClickPursce()" id="Purchase"  class="bg-[#E527B2] text-white w-40 rounded-lg">Make Purchase</button>
                     </div>
                     
                     

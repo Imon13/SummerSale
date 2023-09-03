@@ -92,7 +92,7 @@ function handleClick6(target){
  function aplly(){
    const inputValue = document.getElementById('coupon')
    const inputFeild = inputValue.value
-   if(inputFeild === 'imon')
+   if(inputFeild === 'SELL200')
    { 
         const discountPriceString = document.getElementById('dis')
         const discountPrice = parseFloat(discountPriceString) 
@@ -105,7 +105,11 @@ function handleClick6(target){
    }
  }
 function handleClickPursce(){
-   if(total>0){
-      document.getElementById('Purchase').removeAttribute = 'disabled'
-   }
+   // if(total>0){
+   //    document.getElementById('Purchase').removeAttribute=('disabled')
+   // }
+   // else{
+   //    document.getElementById('Purchase').setAttribute = 'disabled'
+   // }
+   console.log('clcic')
 }
